@@ -26,7 +26,7 @@ public class SecurityConfig {
                            //     "/swagger-ui/**",
                           //      "/swagger-ui/index.html",
                           //      "/swagger-ui.html")
-                        .permitAll()
+                      //  .permitAll()
                         .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults()); // Enable HTTP Basic Auth
         return http.build();
