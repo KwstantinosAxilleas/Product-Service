@@ -28,7 +28,7 @@ public class SecurityConfig {
                                "/swagger-ui.html")
                         .permitAll()
                         .anyRequest().authenticated())
-                .httpBasic(); // Enable HTTP Basic Auth
+                .httpBasic(Customizer.withDefaults()); // Enable HTTP Basic Auth
         return http.build();
     }
     @Bean
